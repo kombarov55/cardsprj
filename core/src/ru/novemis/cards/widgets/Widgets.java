@@ -1,9 +1,9 @@
-package ru.novemis.cards.desktop.widgets;
+package ru.novemis.cards.widgets;
 
 import com.badlogic.gdx.scenes.scene2d.InputEvent;
 import com.badlogic.gdx.scenes.scene2d.ui.Image;
 import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
-import ru.novemis.cards.desktop.common.TextureCache;
+import ru.novemis.cards.common.TextureCache;
 
 public class Widgets {
 

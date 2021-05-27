@@ -1,7 +1,7 @@
-package ru.novemis.cards.desktop.mainmenu;
+package ru.novemis.cards.mainmenu;
 
-import ru.novemis.cards.desktop.common.ScreenBase;
-import ru.novemis.cards.desktop.widgets.Widgets;
+import ru.novemis.cards.common.ScreenBase;
+import ru.novemis.cards.widgets.Widgets;
 
 public class MainMenuScreen extends ScreenBase {
 

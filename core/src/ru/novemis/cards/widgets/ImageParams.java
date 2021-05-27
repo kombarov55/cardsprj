@@ -1,4 +1,4 @@
-package ru.novemis.cards.desktop.widgets;
+package ru.novemis.cards.widgets;
 
 import com.badlogic.gdx.scenes.scene2d.ui.Image;
 

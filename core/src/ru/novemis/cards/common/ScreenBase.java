@@ -1,4 +1,4 @@
-package ru.novemis.cards.desktop.common;
+package ru.novemis.cards.common;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.ScreenAdapter;

@@ -1,7 +1,7 @@
-package ru.novemis.cards.desktop.common;
+package ru.novemis.cards.common;
 
 import com.badlogic.gdx.Screen;
-import ru.novemis.cards.desktop.mainmenu.MainMenuScreen;
+import ru.novemis.cards.mainmenu.MainMenuScreen;
 
 public class Screens {
 
