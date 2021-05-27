@@ -2,6 +2,7 @@ package ru.novemis.cards.mainmenu;
 
 import com.badlogic.gdx.scenes.scene2d.ui.Image;
 import ru.novemis.cards.common.ScreenBase;
+import ru.novemis.cards.config.Window;
 import ru.novemis.cards.widgets.Widgets;
 
 public class MainMenuScreen extends ScreenBase {
@@ -12,8 +13,8 @@ public class MainMenuScreen extends ScreenBase {
     public void onShow() {
         img = Widgets.image()
                 .textureName("badlogic.jpg")
-                .x(100).y(100)
-                .width(150).height(150)
+                .x(0).y(0)
+                .width(Window.width).height(Window.height)
                 .onClick(() -> System.out.println("OK"))
                 .create();
 
