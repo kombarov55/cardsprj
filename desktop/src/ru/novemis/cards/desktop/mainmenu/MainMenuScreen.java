@@ -1,6 +1,5 @@
 package ru.novemis.cards.desktop.mainmenu;
 
-import com.badlogic.gdx.Gdx;
 import ru.novemis.cards.desktop.common.ScreenBase;
 import ru.novemis.cards.desktop.widgets.Widgets;
 
@@ -12,7 +11,7 @@ public class MainMenuScreen extends ScreenBase {
                 .textureName("badlogic.jpg")
                 .x(100).y(100)
                 .width(150).height(150)
-                .onClick(() -> Gdx.app.exit())
+                .onClick(() -> System.out.println("OK"))
                 .create());
     }
 

@@ -16,6 +16,8 @@ public abstract class ScreenBase extends ScreenAdapter {
     @Override
     public final void show() {
         stage = new Stage();
+        Gdx.input.setInputProcessor(stage);
+
         onShow();
     }
 

@@ -20,8 +20,9 @@ public class Widgets {
 
         image.addListener(new ClickListener() {
             @Override
-            public void touchUp(InputEvent event, float x, float y, int pointer, int button) {
+            public boolean touchDown(InputEvent event, float x, float y, int pointer, int button) {
                 onClick.run();
+                return true;
             }
         });
 
