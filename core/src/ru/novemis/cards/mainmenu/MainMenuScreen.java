@@ -8,7 +8,15 @@ public class MainMenuScreen extends ScreenBase {
 
     @Override
     public void onShow() {
-        stage.addActor(Widgets.textButton().x(200).y(200).width(200).height(50).skin(Skins.custom.get()).text("фываолдж asdfjkl Сатана Любит меня!").create());
+        stage.addActor(Widgets.textButton()
+                .x(200)
+                .y(200)
+                .width(200)
+                .height(50)
+                .skin(Skins.custom.get())
+                .text("Сатана Любит меня!")
+                .onClick(() -> {})
+                .create());
     }
 
     @Override
