@@ -3,8 +3,6 @@ package ru.novemis.cards.widgets;
 import com.badlogic.gdx.scenes.scene2d.ui.Skin;
 import com.badlogic.gdx.scenes.scene2d.ui.TextButton;
 
-import java.util.function.Function;
-
 public class TextButtonParams {
     String text;
 
@@ -14,12 +12,6 @@ public class TextButtonParams {
     float width;
     float height;
     Runnable onClick;
-
-    Function<TextButtonParams, TextButton> then;
-
-    public TextButtonParams(Function<TextButtonParams, TextButton> then) {
-        this.then = then;
-    }
 
     public TextButtonParams text(String text) {
         this.text = text;
@@ -56,7 +48,7 @@ public class TextButtonParams {
         return this;
     }
 
-    public TextButton build() {
-        return then.apply(this);
+    public TextButton create() {
+        return Widgets.createTextButton(this);
     }
 }

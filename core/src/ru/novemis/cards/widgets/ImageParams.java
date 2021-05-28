@@ -12,12 +12,6 @@ public class ImageParams {
     float height;
     Runnable onClick;
 
-    private Function<ImageParams, Image> onBuild;
-
-    public ImageParams(Function<ImageParams, Image> onBuild) {
-        this.onBuild = onBuild;
-    }
-
     public ImageParams textureName(String textureName) {
         this.img = textureName;
         return this;
@@ -49,6 +43,6 @@ public class ImageParams {
     }
 
     public Image create() {
-        return onBuild.apply(this);
+        return Widgets.createImage(this);
     }
 }

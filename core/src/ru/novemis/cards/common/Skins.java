@@ -1,11 +1,11 @@
 package ru.novemis.cards.common;
 
-public enum Skins {
-    cloudFormUi("cloud-form-ui-skin/cloud-form-ui.json");
+import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.scenes.scene2d.ui.Skin;
 
-    public String path;
+import static ru.novemis.cards.common.Lazy.lazy;
 
-    Skins(String path) {
-        this.path = path;
-    }
+public class Skins {
+
+    public static Lazy<Skin> custom = lazy(() -> new Skin(Gdx.files.internal("custom-skin/custom-skin.json")));
 }
