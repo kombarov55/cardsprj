@@ -49,6 +49,8 @@ project(":desktop") {
         api "com.badlogicgames.gdx:gdx-platform:$gdxVersion:natives-desktop"
         api "com.badlogicgames.gdx:gdx-tools:$gdxVersion"
         compileOnly "org.projectlombok:lombok:1.16.6"
+        implementation group: 'org.apache.commons', name: 'commons-collections4', version: '4.4'
+        implementation "com.badlogicgames.gdx:gdx-freetype-platform:$gdxVersion:natives-desktop"
     }
 }
 
@@ -64,6 +66,8 @@ project(":ios") {
         api "com.badlogicgames.gdx:gdx-backend-robovm:$gdxVersion"
         api "com.badlogicgames.gdx:gdx-platform:$gdxVersion:natives-ios"
         compileOnly "org.projectlombok:lombok:1.16.6"
+        implementation group: 'org.apache.commons', name: 'commons-collections4', version: '4.4'
+        implementation "com.badlogicgames.gdx:gdx-freetype-platform:$gdxVersion:natives-ios"
     }
 }
 
@@ -80,6 +84,7 @@ project(":html") {
         api "com.badlogicgames.gdx:gdx:$gdxVersion:sources"
         api "com.badlogicgames.gdx:gdx-backend-gwt:$gdxVersion:sources"
         compileOnly "org.projectlombok:lombok:1.16.6"
+        implementation group: 'org.apache.commons', name: 'commons-collections4', version: '4.4'
     }
 }
 
@@ -90,5 +95,7 @@ project(":core") {
     dependencies {
         api "com.badlogicgames.gdx:gdx:$gdxVersion"
         compileOnly "org.projectlombok:lombok:1.16.6"
+        implementation group: 'org.apache.commons', name: 'commons-collections4', version: '4.4'
+        implementation "com.badlogicgames.gdx:gdx-freetype:$gdxVersion"
     }
 }
