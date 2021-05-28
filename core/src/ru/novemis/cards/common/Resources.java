@@ -14,7 +14,4 @@ public class Resources {
             new HashMap<>(),
             path -> new Texture(Gdx.files.internal(path))
     );
-
-
-
 }
